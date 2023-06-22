@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0 ;
+}
+
+body {
+    font-family: lato;
+}
+
+#box {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+
+
+#box div {
+    height: 100%;
+    position: relative
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 0 40px;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: bold ;
+    margin-bottom: 40px; 
+}
+
+
+#about .content h1,
+#portfolio .content h1,
+#services .content h1,
+#contact .content h1{
+    color: #5b5b55;
+}
+
+
+.content p {
+    margin: auto;
+    line-height: 1.5;
+    color: #000;
+} 
+
+ul {
+    padding: 0;
+    text-align: center;
+    margin: 2% auto;
+    width: 1100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    height: 45px;
+    font-size: 20px;
+    margin: 4px 0;
+    background: white;
+    text-transform: uppercase;
+    color: #262626;
+    line-height: 45px;
+    width: 200px;
+}
+ ul li a:hover {
+    background: darkorange;
+    color: white;
+ }
+
+ #home {
+    background: url(creative.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+ }
+
+#portfolio,
+#contact {
+    background: #f3f3f3;
+}
